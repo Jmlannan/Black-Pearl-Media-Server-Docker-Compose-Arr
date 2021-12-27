@@ -1,4 +1,4 @@
-# Super-Media-Server
+# Black Pearl Media Server
 Using Docker containers to build a super great media server
 This will install deluge-openvpn, plex media server, and jellyfin for the ultimate media server
 Descriptions:
