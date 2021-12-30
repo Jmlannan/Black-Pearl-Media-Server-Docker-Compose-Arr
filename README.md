@@ -1,6 +1,7 @@
 # Black Pearl Media Server
 Using Docker containers to build a super great media server.  
-This will install deluge-openvpn, plex media server, and jellyfin for the ultimate media server  
+This will install deluge-openvpn, plex media server, and jellyfin for the ultimate media server.  
+Hardware agnostic and should be able to run anywhere docker can run. Decent processor/memory may be needed to use plex/jellyfin well.
 Descriptions:  
   Deluge/openvpn: environment that allows for torrenting behind a vpn, including safteys to prevent leakages  
   Plex: Media server, use plex app to stream to various devices  
