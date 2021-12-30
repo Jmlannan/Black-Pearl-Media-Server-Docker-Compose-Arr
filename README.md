@@ -12,17 +12,22 @@ Descriptions:
   https://docs.docker.com/engine/install/  
   https://docs.docker.com/compose/install/  
 
-2. edit the parameters in .env
+2. Clone this repository
+  ```
+  git clone https://github.com/Jmlannan/Black-Pearl-Media-Server
+  ```
+
+3. edit the parameters in .env
   ```
   nano .env
   ```
-3. copy your ovpn files from your vpn of choice into /Deluge/config/openvpn/ (login goes in .env)
+4. copy your ovpn files from your vpn of choice into /Deluge/config/openvpn/ (login info goes in .env)
 
-4. run the setup code 
+5. run the setup code 
   ```
   sudo sh ./setup.sh
   ```
-5. optionally install portainer to manage
+6. optionally install portainer to manage
   ```
   docker run -d -p 8000:8000 -p 9443:9443 --name portainer \
     --restart=always \
@@ -31,7 +36,7 @@ Descriptions:
     cr.portainer.io/portainer/portainer-ce:2.9.3
   ```
 
-5. Access the programs in web browser using
+7. Access the programs in web browser using
   ```
   Deluge: <IP or Hostname>:8112
   Plex:  <IP or Hostname>:32400/web/index.html
