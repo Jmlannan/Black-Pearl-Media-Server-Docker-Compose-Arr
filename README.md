@@ -1,16 +1,16 @@
 # Black Pearl Media Server
-Using Docker containers to build a super great media server
-This will install deluge-openvpn, plex media server, and jellyfin for the ultimate media server
-Descriptions:
-  Deluge/openvpn: environment that allows for torrenting behind a vpn, including safteys to prevent leakages
-  Plex: Media server, use plex app to stream to various devices
-  Jellyfin: Backup media server that has some better compatability with chrome cast but less mature than plex
-  Portainer: Management for containers, optional.
+Using Docker containers to build a super great media server.  
+This will install deluge-openvpn, plex media server, and jellyfin for the ultimate media server  
+Descriptions:  
+  Deluge/openvpn: environment that allows for torrenting behind a vpn, including safteys to prevent leakages  
+  Plex: Media server, use plex app to stream to various devices  
+  Jellyfin: Backup media server that has some better compatability with chrome cast but less mature than plex  
+  Portainer: Management for containers, optional.  
 
 
-1. First install docker and docker compose on base system:
-  https://docs.docker.com/engine/install/
-  https://docs.docker.com/compose/install/
+1. First install docker and docker compose on base system:  
+  https://docs.docker.com/engine/install/  
+  https://docs.docker.com/compose/install/  
 
 2. edit the parameters in .env
   ```
