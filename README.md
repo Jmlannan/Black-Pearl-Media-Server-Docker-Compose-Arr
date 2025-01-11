@@ -1,4 +1,4 @@
-# Black Pearl Media Server
+# Black Pearl Media Server, Docker Compose Arr Stack
 Using Docker containers to build a super great media server.  
 Hardware agnostic and should be able to run anywhere docker can run. Decent processor/memory may be needed to use jellyfin well.  
   
