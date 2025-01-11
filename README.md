@@ -22,12 +22,12 @@ sudo docker compose up -d
 
 7. Access the programs in web browser and setup all of the programs following the guides:
   ```
-  Jackett: <IP or Hostname>:9117   #This is for adding trackers, neccisary for further steps. See https://github.com/Jackett/Jackett
-  Deluge: <IP or Hostname>:8112    #Used for downloads, turn on label and autoextract plugin. See https://deluge-torrent.org/userguide/
-  Radarr: <IP or Hostname>:7878    #for downloading movie automatically, https://wiki.servarr.com/radarr
-  Sonarr: <IP or Hostname>:8989    #for downloading shows, https://wiki.servarr.com/sonarr
-  Lidarr: <IP or Hostname>:8686    #for downloading music, https://wiki.servarr.com/en/lidarr
-  Jellyfin: <IP or Hostname>:8096  #Use this on TV and other devices for watching content
+  Jackett:  <IP or Hostname>:9117    #This is for adding trackers, neccisary for further steps. See https://github.com/Jackett/Jackett
+  Deluge:   <IP or Hostname>:8112    #Used for downloads, turn on label and autoextract plugin. See https://deluge-torrent.org/userguide/
+  Radarr:   <IP or Hostname>:7878    #for downloading movie automatically, https://wiki.servarr.com/radarr
+  Sonarr:   <IP or Hostname>:8989    #for downloading shows, https://wiki.servarr.com/sonarr
+  Lidarr:   <IP or Hostname>:8686    #for downloading music, https://wiki.servarr.com/en/lidarr
+  Jellyfin: <IP or Hostname>:8096    #Use this on TV and other devices for watching content
   
   ```
 
