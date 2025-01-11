@@ -20,23 +20,23 @@ Descriptions:
   git clone https://github.com/Jmlannan/Black-Pearl-Media-Server
   ```
 
-3. edit the parameters in .env. Go line by line and fill out all the information for your system.
-  ```
-  nano .env
-  ```
-4. copy your ovpn files from your vpn of choice into <compose folder>/Deluge/config/openvpn/ (login info goes in .env)
+3. edit example.env and save as .env
 
-5. run the setup code 
-  ```
-  sudo sh ./setup.sh
-  ```
+5. startup with docker compose
+```
+sudo docker compose up -d
+```
+  -d for detatched mode
 
-6. Access the programs in web browser using
+7. Access the programs in web browser and setup all of the programs in order:
   ```
-  Deluge: <IP or Hostname>:8112
-  Plex:  <IP or Hostname>:32400/web/index.html
-  Jellyfin: <IP or Hostname>:8096
-  Portainer: <IP or Hostname>:9000
+  Jackett: <IP or Hostname>:9117   #This is for adding trackers, neccisary for further steps. See https://github.com/Jackett/Jackett
+  Deluge: <IP or Hostname>:8112    #Used for downloads, turn on label and autoextract plugin. See https://deluge-torrent.org/userguide/
+  Radarr: <IP or Hostname>:7878    #for downloading movie automatically, https://wiki.servarr.com/radarr
+  Sonarr: <IP or Hostname>:8989    #for downloading shows, https://wiki.servarr.com/sonarr
+  Lidarr: <IP or Hostname>:8686    #for downloading music, https://wiki.servarr.com/en/lidarr
+  Jellyfin: <IP or Hostname>:8096  #Use this on TV and other devices for watching content
+  
   ```
   
 
