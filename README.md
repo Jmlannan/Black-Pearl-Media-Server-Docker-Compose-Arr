@@ -20,9 +20,9 @@ Descriptions:
   git clone https://github.com/Jmlannan/Black-Pearl-Media-Server
   ```
 
-3. edit example.env and save as .env
+3. Edit example.env and save as .env
 
-5. startup with docker compose
+5. Startup with docker compose.
 ```
 sudo docker compose up -d
 ```
