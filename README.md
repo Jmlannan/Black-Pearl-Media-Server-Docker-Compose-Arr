@@ -1,5 +1,6 @@
 # Black Pearl Media Server, Docker Compose Arr Stack
-Using Docker containers to build a super great media server.  
+Using Docker containers to build a super great media server.
+Uses nordvpn but this can be replaced with another vpn container.
 Hardware agnostic and should be able to run anywhere docker can run. Decent processor/memory may be needed to use jellyfin well.  
   
 1. First install docker and docker compose on base system:  
