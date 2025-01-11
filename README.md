@@ -28,7 +28,6 @@ sudo docker compose up -d
   Sonarr:   <IP or Hostname>:8989    #for downloading shows, https://wiki.servarr.com/sonarr
   Lidarr:   <IP or Hostname>:8686    #for downloading music, https://wiki.servarr.com/en/lidarr
   Jellyfin: <IP or Hostname>:8096    #Use this on TV and other devices for watching content
-  
   ```
 
   See Jackett setup for adding a tracker of your choice (no recomendations or comments here on how to do that, see their documents and your tracker).
