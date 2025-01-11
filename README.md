@@ -30,6 +30,7 @@ sudo docker compose up -d
   Jellyfin: <IP or Hostname>:8096  #Use this on TV and other devices for watching content
   
   ```
-  
 
-  
+  See Jackett setup for adding a tracker of your choice (no recomendations or comments here on how to do that, see their documents and your tracker).
+  Deluge needs the label and autoextract plugins enable to work properly.
+  For each of Radarr, Sonarr and Lidarr, go to settings>download clients and add deluge. Add your jackett tracker in settings>indexers. 
