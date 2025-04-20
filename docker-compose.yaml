@@ -22,6 +22,7 @@ services:
       - "6881:6881"
       - "6881:6881/udp"
       - "9117:9117"
+      - "9696:9696"
 
   jellyfin:
     image: jellyfin/jellyfin
@@ -96,17 +97,19 @@ services:
       - ${DOWNLOADS_DIR}:/downloads
     restart: unless-stopped
 
-  jackett:
-    image: lscr.io/linuxserver/jackett
-    container_name: jackett
-    network_mode: "service:nordvpn"
-    environment:
-      - PUID=${UID}
-      - PGID=${GID}
-    volumes:
-      - ${CONFIG_DIR}/Jackett:/config
-      - ${DOWNLOADS_DIR}:/downloads
-    restart: unless-stopped
+  prowlarr:
+   image: lscr.io/linuxserver/prowlarr:latest
+   container_name: prowlarr
+   network_mode: "service:nordvpn"
+   depends_on:
+     - nordvpn
+   environment:
+     - PUID=${UID}
+     - PGID=${GID}
+     - TZ=Etc/UTC
+   volumes:
+     - ${CONFIG_DIR}/Prowlarr:/config
+   restart: unless-stopped
 
 networks:
   default:
